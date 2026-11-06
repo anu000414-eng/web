@@ -1,0 +1,495 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharathapuzha - Resource Website</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f5;
+    color: #263b32;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background: #124638;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h2 {
+    font-size: 23px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #f2c76e;
+}
+
+/* Hero section */
+.hero {
+    height: 550px;
+    background:
+    linear-gradient(rgba(0,40,30,.55),rgba(0,40,30,.55)),
+    url("https://images.unsplash.com/photo-1433086966358-54859d0ed716?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #d9aa45;
+    color: #173b30;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #f0c66e;
+}
+
+/* Common sections */
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #15513f;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.intro {
+    max-width: 1000px;
+    margin: auto;
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* Geography */
+.geography {
+    background: #e8f1eb;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+.info-card h3 {
+    color: #15513f;
+    margin-bottom: 10px;
+}
+
+/* Resource section */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.resource-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border-left: 5px solid #27805d;
+    box-shadow: 0 4px 12px rgba(0,0,0,.07);
+}
+
+.resource-card h3 {
+    color: #15513f;
+    margin-bottom: 10px;
+}
+
+/* Map */
+.map-section {
+    background: #e8f1eb;
+}
+
+.map-container {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.1);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 650px;
+    border: none;
+    border-radius: 8px;
+}
+
+.map-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contact */
+.contact {
+    background: #124638;
+    color: white;
+    text-align: center;
+}
+
+.contact h2 {
+    color: white;
+}
+
+.contact a {
+    color: #f2c76e;
+    text-decoration: none;
+}
+
+.contact p {
+    margin: 8px 0;
+}
+
+/* Footer */
+footer {
+    background: #092d25;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .info-grid,
+    .resource-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .map-container iframe {
+        height: 500px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <h2>BHARATHAPUZHA | NILA</h2>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Introduction</a>
+        <a href="#geography">Geography</a>
+        <a href="#resources">Resources</a>
+        <a href="#map">Resource Map</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Home -->
+<section class="hero" id="home">
+    <div>
+        <h1>BHARATHAPUZHA</h1>
+        <p>Exploring the Geography, Natural Resources and Cultural Landscape of Nila</p>
+        <a href="#map" class="btn">Explore Interactive Map</a>
+    </div>
+</section>
+
+<!-- Introduction -->
+<section id="about">
+    <h2 class="section-title">Introduction to Bharathapuzha</h2>
+
+    <div class="intro">
+        <p>
+        Bharathapuzha, popularly known as Nila, is one of the
+        important rivers of Kerala. It is the second-longest
+        river in the state and plays a significant role in the
+        physical, economic and cultural landscape of central
+        Kerala.
+        </p>
+
+        <br>
+
+        <p>
+        The river originates in the Anaimalai Hills of the
+        Western Ghats and flows westwards through parts of
+        Tamil Nadu and Kerala before joining the Arabian Sea
+        near Ponnani in Malappuram district.
+        </p>
+
+        <br>
+
+        <p>
+        Bharathapuzha is an important source of water for
+        agriculture, settlements and other human activities.
+        The river basin also has considerable ecological,
+        historical and cultural significance.
+        </p>
+    </div>
+</section>
+
+<!-- Geography -->
+<section class="geography" id="geography">
+    <h2 class="section-title">Geographical Information</h2>
+
+    <div class="intro">
+        <p>
+        The Bharathapuzha river basin extends across parts of
+        Kerala and Tamil Nadu. Its landscape includes the
+        Western Ghats, foothills, plains and coastal areas.
+        The river is connected with several tributaries that
+        contribute to its drainage system.
+        </p>
+    </div>
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>River Length</h3>
+            <p>Approximately 209 km</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Origin</h3>
+            <p>Anaimalai Hills, Western Ghats</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Outflow</h3>
+            <p>Arabian Sea near Ponnani</p>
+        </div>
+
+        <div class="info-card">
+            <h3>River Basin Area</h3>
+            <p>Approximately 6,186 sq. km</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Direction of Flow</h3>
+            <p>Westward</p>
+        </div>
+
+        <div class="info-card">
+            <h3>Major Region</h3>
+            <p>Central Kerala and adjoining Tamil Nadu</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Resources -->
+<section id="resources">
+    <h2 class="section-title">Natural Resources of Bharathapuzha</h2>
+
+    <div class="resource-grid">
+
+        <div class="resource-card">
+            <h3>Water Resources</h3>
+            <p>
+            Bharathapuzha and its tributaries provide water
+            resources for irrigation, domestic use and
+            other activities.
+            </p>
+        </div>
+
+        <div class="resource-card">
+            <h3>Agricultural Resources</h3>
+            <p>
+            The river basin supports agricultural activities.
+            Irrigation facilities contribute to cultivation
+            in different parts of the basin.
+            </p>
+        </div>
+
+        <div class="resource-card">
+            <h3>Forest Resources</h3>
+            <p>
+            The upper catchment is associated with the
+            Western Ghats ecosystem, which supports diverse
+            vegetation and wildlife.
+            </p>
+        </div>
+
+        <div class="resource-card">
+            <h3>Ecological Resources</h3>
+            <p>
+            River channels, wetlands, riparian vegetation
+            and associated habitats support biodiversity
+            and ecological processes.
+            </p>
+        </div>
+
+        <div class="resource-card">
+            <h3>Tourism Resources</h3>
+            <p>
+            The river basin contains scenic landscapes,
+            cultural locations and places of recreational
+            importance.
+            </p>
+        </div>
+
+        <div class="resource-card">
+            <h3>Cultural Resources</h3>
+            <p>
+            Nila has a strong connection with the literature,
+            traditions, history and cultural identity of Kerala.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Interactive Map -->
+<section class="map-section" id="map">
+
+    <h2 class="section-title">
+        Interactive Bharathapuzha Resource Map
+    </h2>
+
+    <div class="intro">
+        <p>
+        Explore the interactive WebGIS map of Bharathapuzha.
+        The map provides a spatial view of the geographical
+        features and resources represented in the project.
+        Use the map controls to zoom, pan and explore the
+        mapped information.
+        </p>
+    </div>
+
+    <br>
+
+    <div class="map-container">
+
+        <iframe
+            src="https://anu000414-eng.github.io/BHARATHA/"
+            title="Bharathapuzha Interactive Resource Map"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+        <div class="map-link">
+            <a
+            href="https://anu000414-eng.github.io/BHARATHA/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn">
+            Open Full Interactive Map
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Contact Information</h2>
+
+    <h3>Anamika P</h3>
+
+    <p>Website Designer and Developer</p>
+
+    <p>
+        Email:
+        <a href="mailto:anu000414@gmail.com">
+        anu000414@gmail.com
+        </a>
+    </p>
+
+    <p>
+        For queries and information regarding the
+        Bharathapuzha Resource Mapping Project,
+        please contact through email.
+    </p>
+
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+    © <span id="year"></span> Bharathapuzha Resource Website
+    </p>
+
+    <p>Designed and Developed by Anamika P</p>
+
+    <p>
+    <a href="mailto:anu000414@gmail.com">
+    Contact Email
+    </a>
+    </p>
+</footer>
+
+<script>
+document.getElementById("year").textContent =
+new Date().getFullYear();
+</script>
+
+</body>
+</html>
